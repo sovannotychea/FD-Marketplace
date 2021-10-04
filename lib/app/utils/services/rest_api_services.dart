@@ -1,7 +1,7 @@
 library rest_api_service;
 
 import 'package:flutter/material.dart';
-import 'package:marketplace/app/constans/app_constants.dart';
+import 'package:fmarket/app/constans/app_constants.dart';
 
 // model
 part 'model/product.dart';

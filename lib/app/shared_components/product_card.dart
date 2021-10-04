@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
-import 'package:marketplace/app/constans/app_constants.dart';
-import 'package:marketplace/app/utils/ui/ui_utils.dart';
+import 'package:fmarket/app/constans/app_constants.dart';
+import 'package:fmarket/app/utils/ui/ui_utils.dart';
 
 class ProductCardData {
   final ImageProvider image;

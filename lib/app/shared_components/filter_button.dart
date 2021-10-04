@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:marketplace/app/shared_components/custom_icon_button.dart';
+import 'package:fmarket/app/shared_components/custom_icon_button.dart';
 
 class FilterButton extends StatelessWidget {
   const FilterButton({required this.onPressed, this.size = 60, Key? key})

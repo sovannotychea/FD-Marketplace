@@ -3,11 +3,11 @@ library product_detail;
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
-import 'package:marketplace/app/constans/app_constants.dart';
-import 'package:marketplace/app/shared_components/custom_icon_button.dart';
-import 'package:marketplace/app/shared_components/indicator.dart';
-import 'package:marketplace/app/utils/services/rest_api_services.dart';
-import 'package:marketplace/app/utils/ui/ui_utils.dart';
+import 'package:fmarket/app/constans/app_constants.dart';
+import 'package:fmarket/app/shared_components/custom_icon_button.dart';
+import 'package:fmarket/app/shared_components/indicator.dart';
+import 'package:fmarket/app/utils/services/rest_api_services.dart';
+import 'package:fmarket/app/utils/ui/ui_utils.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
 // binding
