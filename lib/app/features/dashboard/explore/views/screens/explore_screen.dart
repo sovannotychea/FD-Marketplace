@@ -2,13 +2,15 @@ library explore;
 
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:fmarket/app/config/routes/app_pages.dart';
+import 'package:fmarket/app/utils/services/rest_api_services.dart';
 import 'package:get/get.dart';
-import 'package:marketplace/app/config/routes/app_pages.dart';
-import 'package:marketplace/app/constans/app_constants.dart';
-import 'package:marketplace/app/shared_components/filter_button.dart';
-import 'package:marketplace/app/shared_components/product_card.dart';
-import 'package:marketplace/app/shared_components/search_field.dart';
-import 'package:marketplace/app/utils/services/rest_api_services.dart';
+import 'package:fmarket/app/config/routes/app_pages.dart';
+import 'package:fmarket/app/constans/app_constants.dart';
+import 'package:fmarket/app/shared_components/filter_button.dart';
+import 'package:fmarket/app/shared_components/product_card.dart';
+import 'package:fmarket/app/shared_components/search_field.dart';
+import 'package:fmarket/app/utils/services/rest_api_services.dart';
 import 'package:tab_indicator_styler/tab_indicator_styler.dart';
 
 // binding

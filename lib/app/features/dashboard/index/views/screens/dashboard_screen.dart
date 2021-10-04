@@ -3,7 +3,7 @@ library dashboard;
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
-import 'package:marketplace/app/features/dashboard/explore/views/screens/explore_screen.dart';
+import 'package:fmarket/app/features/dashboard/explore/views/screens/explore_screen.dart';
 import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
 
 // binding

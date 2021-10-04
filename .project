@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>fdmarket</name>
+=======
+	<name>fmarket</name>
+>>>>>>> branch 'master' of https://github.com/sovannotychea/FD-Marketplace.git
 	<comment></comment>
 	<projects>
 	</projects>

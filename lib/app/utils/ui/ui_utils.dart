@@ -3,7 +3,7 @@ library ui_utils;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:marketplace/app/constans/app_constants.dart';
+import 'package:fmarket/app/constans/app_constants.dart';
 
 part 'app_bottomshet.dart';
 part 'app_dialog.dart';

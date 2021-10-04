@@ -1,14 +1,15 @@
 import 'package:get/get.dart';
-import 'package:marketplace/app/features/dashboard/explore/views/screens/explore_screen.dart';
-import 'package:marketplace/app/features/dashboard/index/views/screens/dashboard_screen.dart';
-import 'package:marketplace/app/features/product/product_detail/views/screens/product_detail_screen.dart';
+import 'package:fmarket/app/features/dashboard/explore/views/screens/explore_screen.dart';
+import 'package:fmarket/app/features/dashboard/index/views/screens/dashboard_screen.dart';
+import 'package:fmarket/app/features/login/views/screens/login_screen.dart';
+import 'package:fmarket/app/features/product/product_detail/views/screens/product_detail_screen.dart';
 
 part 'app_routes.dart';
 
 /// contains all configuration pages
 class AppPages {
   /// when the app is opened this page will be the first to be shown
-  static const initial = Routes.dashboard;
+  static const initial = Routes.login;
 
   static final routes = [
     GetPage(
@@ -18,6 +19,12 @@ class AppPages {
         DashboardBinding(),
         ExploreBinding(),
       ],
+    ),
+    GetPage(
+      name: _Paths.login,
+      page: () => LoginScreen(),
+      binding: LoginBinding(),
+      transition: Transition.downToUp,
     ),
     GetPage(
       name: _Paths.product + "/:id",
