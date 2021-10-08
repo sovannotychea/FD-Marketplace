@@ -22,6 +22,7 @@ class ProductService extends RestApiServices {
       _vr,
       _orangeBlouse,
       _cardigan,
+      _cardigan01,
       _shoes,
       _blueMidiDress,
       _bag,
@@ -35,7 +36,7 @@ class ProductService extends RestApiServices {
       _pinkJacket,
       _shoes2,
       _orangeBlouse,
-      _cardigan,
+      _cardigan01,
       _shoes,
       _blueMidiDress,
     ];
@@ -72,6 +73,24 @@ class ProductService extends RestApiServices {
   );
 
   final _cardigan = Product(
+    id: "54647",
+    idUser: "fwg345",
+    images: [
+      AssetImage(ImageRasterPath.cardigan),
+      AssetImage(ImageRasterPath.cardigan2),
+    ],
+    name:
+        "Women Knitted Sweater Open Front Pocket Coat Long Cardigan Coat/Jacket Winter",
+    price: 10.1,
+    isFavorite: true,
+    description:
+        "Lorem ipsum At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+    totalViews: 1135,
+    totalReview: 140,
+    rating: 4.8,
+  );
+
+  final _cardigan01 = Product(
     id: "54647",
     idUser: "fwg345",
     images: [

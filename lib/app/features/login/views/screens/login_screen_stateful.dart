@@ -1,28 +1,36 @@
-library login;
-
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:fmarket/app/features/login/controllers/login_controller.dart';
 import 'package:get/get.dart';
-import 'package:fmarket/app/constans/app_constants.dart';
-import 'package:fmarket/app/shared_components/custom_icon_button.dart';
-import 'package:fmarket/app/shared_components/indicator.dart';
-import 'package:fmarket/app/utils/services/rest_api_services.dart';
-import 'package:fmarket/app/utils/ui/ui_utils.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:fmarket/app/config/routes/app_pages.dart';
 
-// binding
-part '../../bindings/login_binding.dart';
+class LoginScreenStateFull extends StatefulWidget {
+  LoginScreenStateFull({Key? key}) : super(key: key);
 
-// controller
-part '../../controllers/login_controller.dart';
+  @override
+  _nameState createState() => _nameState();
+}
 
-// component
-
-class LoginScreen extends GetView<LoginController> {
+class _nameState extends State<LoginScreenStateFull> {
   TextStyle style = TextStyle(fontFamily: 'Montserrat', fontSize: 20.0);
+
+  LoginController login = Get.put(LoginController());
+
+  final phone = TextEditingController();
+  final password = TextEditingController();
+
+  @override
+  void initState() {
+    super.initState();
+  }
+
+  _onPressLogin(String phone, String password) {
+    login.login(phone, password);
+  }
+
   @override
   Widget build(BuildContext context) {
     final phoneField = TextField(
+      controller: phone,
       obscureText: false,
       style: style,
       decoration: InputDecoration(
@@ -33,6 +41,7 @@ class LoginScreen extends GetView<LoginController> {
     );
     final passwordField = TextField(
       obscureText: true,
+      controller: password,
       style: style,
       decoration: InputDecoration(
           contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
@@ -47,7 +56,9 @@ class LoginScreen extends GetView<LoginController> {
       child: MaterialButton(
         minWidth: MediaQuery.of(context).size.width,
         padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-        onPressed: () {},
+        onPressed: () {
+          _onPressLogin(phone.text, password.text);
+        },
         child: Text("Login",
             textAlign: TextAlign.center,
             style: style.copyWith(
@@ -89,5 +100,6 @@ class LoginScreen extends GetView<LoginController> {
         ),
       ),
     );
+    ;
   }
 }

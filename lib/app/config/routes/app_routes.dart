@@ -4,7 +4,6 @@ part of 'app_pages.dart';
 class Routes {
   static const dashboard = _Paths.dashboard;
   static const login = _Paths.login;
-
   static const product = _Paths.product;
 }
 
@@ -13,12 +12,10 @@ class Routes {
 class _Paths {
   static const dashboard = '/dashboard';
   static const login = '/login';
-
   static const product = '/product';
-
   // Example :
   // static const index = '/';
-  // static const splash = '/splash';
+  static const splash = '/splash';
   // static const product = '/product';
   // static const productEdit = '/product/edit';
   // static const productDetail = '/product/detail';
